@@ -13,6 +13,9 @@ class Backer
     project.backer = self 
     project.backers << self
   end
-
+  
+  def backer
+    @backer = backer
+  end
 end
   
