@@ -10,8 +10,8 @@ class Backer
   
   def back_project(project)
     @backed_projects << project
-    title.backer = self 
-    title.backers << self
+    project.backer = self 
+    project.backers << self
 
 end
 end
