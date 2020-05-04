@@ -10,13 +10,7 @@ class Backer
   end
   
   def backed_projects
-    backproj = ProjectBacker.all.select {|back| back.backer == self}
-    backproj.map {|back| back.project}
-  end
-
-  def back_project(project)
-    ProjectBacker.new(project, self)
-  end
+ 
 
 end
   
